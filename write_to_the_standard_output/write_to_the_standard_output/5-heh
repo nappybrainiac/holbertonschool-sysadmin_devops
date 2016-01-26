@@ -1,0 +1,3 @@
+#!/bin/bash
+variable='"(324\o)'\'
+echo $variable
