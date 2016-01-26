@@ -1,3 +1,0 @@
-#!/bin/bash
-STR=$SHELL
-echo 'Hello, my shell is' + $STR
