@@ -1,0 +1,24 @@
+What should you create? Using what?
+===================================
+
+We are creating Secure SHells (SSH) that function as an encrypted channel between your terminal and a server over an unsecure line. It uses an RSA algorithm that is 4096 bit encryption for greater security. A passkey is assigned for even more security. The process creates a public and private key.
+
+Use the following to generate the key described above:
+1. ssh-keygen -t rsa -b 4096 -C "your_email@example.com" (using email as a label)
+2. Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+3. Enter passphrase (empty for no passphrase): [Type a passphrase]
+   Enter same passphrase again: [Type passphrase again
+
+The private key belongs to the client and must be protected like a password. The public key resides on the server.
+
+
+What should you do with the public key? How will it be used? What will it do?
+=============================================================================
+
+The public key is made available to the servers that the client is connecting to. They can be safely disseminated because they are mathematically connected to the private key.
+
+
+What should you do with the private key? How will it be used? What will it do?
+==============================================================================
+
+The private key is kept secret by the client and on the client-side computer. It is bound mathematically to the public key and is the tool used to decrypt messages sent by servers or people who have the public key. Any compromise of the private key renders the entire process null and void.
