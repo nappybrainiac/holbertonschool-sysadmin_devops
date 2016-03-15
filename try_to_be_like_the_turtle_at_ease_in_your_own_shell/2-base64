@@ -1,2 +1,2 @@
 #!/bin/bash
-cat $2 | base64 -D
+base64 -d
