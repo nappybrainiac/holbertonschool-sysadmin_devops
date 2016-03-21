@@ -6,7 +6,7 @@
 # and outputs the contents.
 #
 # Requirements:
-# - The command cannot be used
+# - The concatenate command cannot be used
 # - Must use a while loop
 #
 #---------------------------------

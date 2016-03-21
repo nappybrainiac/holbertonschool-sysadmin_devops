@@ -7,7 +7,7 @@
 #  the file.
 #
 #  Requirements:
-#   - The command cannot be used.
+#   - The cat command cannot be used.
 #   - The while loop must be used.
 #   - The script must count the number of
 #     lines HEAD and GET requests are met.
