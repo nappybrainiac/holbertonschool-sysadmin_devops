@@ -1,2 +1,0 @@
-#!/bin/bash
-find -name *.gif | xargs basename -a | sed -e 's/\..*$//'
