@@ -14,6 +14,7 @@
 
 #!/bin/bash
 touch /tmp/permissions         # Creates the file
-chmod u+rw-x /tmp/permissions  # Changes user permissions
-chmod g+rw-x /tmp/permissions  # Changes group permissions
-chmod o+rw-x /tmp/permissions  # Changes other(s) permissions
+chmod a+rw-x /tmp/permissions  # Changes all permissions
+                               # a - all (user, group, others)
+                               # +rw - add read & write permissions
+                               # -x - remove executable permissions
